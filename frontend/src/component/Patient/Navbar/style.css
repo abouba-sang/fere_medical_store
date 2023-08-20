@@ -1,0 +1,63 @@
+.patient__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 10px 20px;
+}
+
+.patient__navbar-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.patient__navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.patient__medecin_profile {
+  font-size: 18px;
+  margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.patient__medecin_name {
+  font-weight: bold;
+}
+
+.patient__logout-button {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .3s ease-in;
+}
+
+.patient__logout-button:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .patient__navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .patient__navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .patient__navbar-links {
+    margin-top: 10px;
+  }
+}
